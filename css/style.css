@@ -1,0 +1,53 @@
+:root {
+    --primary-color: rgb(156, 9, 51);
+    --shadow-light: 0 0 10px rgba(0, 0, 0, 0.1);
+    --border-radius-small: 8px;
+}
+
+body {
+    font-family: 'Times New Roman', serif;
+    background-color: #f4f4f4;
+    color: var(--primary-color);
+}
+
+.header-content {
+    background: rgba(232, 198, 198, 0.8);
+    padding: 20px;
+}
+
+.logo {
+    font-family: 'Great Vibes', cursive;
+    font-size: 36px;
+    color: var(--primary-color);
+}
+
+nav a {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav a:hover {
+    color: #ccc;
+}
+
+.main {
+    padding: 20px;
+}
+
+.card {
+    box-shadow: var(--shadow-light);
+    border-radius: var(--border-radius-small);
+}
+
+.smaller-img {
+    border-radius: var(--border-radius-small);
+    box-shadow: var(--shadow-light);
+}
+
+footer {
+    background-color: #333;
+}
