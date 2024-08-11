@@ -40,7 +40,7 @@ body {
 }
 
 .navbar {
-  background-color: var(--footer-background-color);
+  background-color:  #c4a072;
   padding: 10px 0;
 }
 
@@ -51,7 +51,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1px;
-  background-color: var(--footer-background-color);
+  background-color:  #c4a072;
   padding: 10px;
   border-radius: 5px;
 }
@@ -66,6 +66,13 @@ body {
   padding: 20px;
 }
 
+.horizontal-header {
+  width: 100%;
+  height: auto;
+  max-height: 550px;
+  object-fit: cover;
+}
+
 .card {
   box-shadow: var(--shadow-light);
   border-radius: var(--border-radius-small);
@@ -76,13 +83,75 @@ body {
   box-shadow: var(--shadow-light);
 }
 
+.image {
+  margin-bottom: 50px;
+}
+
+.map {
+  margin-bottom: 98px;
+}
+
 .footer {
-  background-color: var(--footer-background-color);
-  color: white;
-  padding: 10px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 100%;
+  background-color: #c4a072 !important;
+  color: white !important;
+  padding: 10px 0 !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+  width: 100% !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero {
+      height: 40vh;
+  }
+
+  .hero-title {
+      font-size: 2rem;
+  }
+
+  .hero-subtitle {
+      font-size: 1rem;
+  }
+
+  .navbar-nav .nav-item .nav-link {
+      font-size: 14px;
+      padding: 8px;
+  }
+
+  .container {
+      padding: 15px;
+  }
+
+  .horizontal-header {
+      max-height: 300px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  .hero {
+      height: 50vh;
+  }
+
+  .hero-title {
+      font-size: 2.2rem;
+  }
+
+  .hero-subtitle {
+      font-size: 1.1rem;
+  }
+
+  .navbar-nav .nav-item .nav-link {
+      font-size: 15px;
+      padding: 9px;
+  }
+
+  .container {
+      padding: 18px;
+  }
+
+  .horizontal-header {
+      max-height: 400px;
+  }
 }
