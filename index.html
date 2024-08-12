@@ -23,7 +23,10 @@
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <ul class="navbar-nav mx-auto">
+            <button class="hamburger" id="hamburger">
+                &#9776;
+            </button>
+            <ul class="navbar-nav mx-auto" id="navbarNav">
                 <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="./pages/Bangkok.html">Bangkok</a></li>
                 <li class="nav-item"><a class="nav-link" href="./pages/BuenosAires.html">Buenos Aires</a></li>
@@ -34,6 +37,14 @@
             </ul>
         </div>
     </nav>
+
+    <script>
+        document.getElementById('hamburger').addEventListener('click', function() {
+            var navbarNav = document.getElementById('navbarNav');
+            navbarNav.classList.toggle('active');
+        });
+    </script>
+    
 
     <!-- Main Content -->
     <main class="container my-5">

@@ -44,6 +44,12 @@ body {
     padding: 10px 0;
 }
 
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .navbar-nav .nav-item .nav-link {
     font-size: 16px; 
     font-weight: bold;
@@ -58,6 +64,15 @@ body {
 
 .navbar-nav .nav-item .nav-link:hover {
     color: black;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: #000;
+    cursor: pointer;
 }
 
 .container {
@@ -102,6 +117,7 @@ body {
     width: 100% !important;
 }
 
+/* Mobile styles and hamburger menu */
 @media only screen and (max-width: 600px) {
     .hero {
         height: 40vh;
@@ -115,9 +131,33 @@ body {
         font-size: 1rem;
     }
 
+    .navbar-nav {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #c4a072;
+        text-align: center;
+        z-index: 1000;
+        flex-direction: column;
+    }
+
     .navbar-nav .nav-item .nav-link {
         font-size: 14px;
         padding: 8px;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 10px 0;
+    }
+
+    .navbar-nav.active {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
     }
 
     .container {
@@ -126,6 +166,11 @@ body {
 
     .horizontal-header {
         max-height: 300px;
+    }
+
+    .footer {
+        font-size: 0.9rem;
+        padding: 8px 0;
     }
 }
 
