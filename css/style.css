@@ -1,145 +1,159 @@
 :root {
-  --primary-color: #333;
-  --shadow-light: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  --border-radius-small: 5px;
-  --footer-background-color: #c4a072;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-.hero {
-  position: relative;
-  width: 100%;
-  height: 50vh; /* Reduced height for better proportion */
-  background: url("../assets/Hero.jpg") no-repeat center center/cover;
-}
-.hero-overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  border-radius: 10px;
-}
-.hero-title {
-  font-size: 2rem;
-  margin: 0;
-}
-
-.navbar {
-  background-color: #c4a072;
-  padding: 10px 0;
-}
-.navbar .hamburger {
-  display: none;
-  font-size: 30px;
-  background: none;
-  border: none;
-  color: #000;
-  cursor: pointer;
-}
-.navbar .navbar-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  list-style: none;
-}
-.navbar .navbar-nav .nav-item .nav-link {
-  font-size: 16px;
-  font-weight: bold;
-  color: #000000;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  background-color: #c4a072;
-  padding: 10px;
-  border-radius: 5px;
-}
-.navbar .navbar-nav .nav-item .nav-link:hover {
-  color: black;
-}
-
-/* City Card Styles */
-.card {
-  box-shadow: var(--shadow-light);
-  border-radius: var(--border-radius-small);
-  margin-bottom: 30px;
-}
-
-.card-img-top {
-  height: 250px; /* Increased height for better visibility */
-  object-fit: cover; /* Ensure images cover the entire card area */
-}
-
-/* Mobile styles and hamburger menu */
-@media only screen and (max-width: 600px) {
+    --primary-color: #333;
+    --shadow-light: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    --border-radius-small: 5px;
+    --footer-background-color: #c4a072;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
   .hero {
-    height: 30vh; /* Further reduced height on mobile */
-  }
-  .hero-title {
-    font-size: 1.5rem;
-  }
-  .navbar-nav {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background-color: #c4a072;
-    text-align: center;
-    z-index: 1000;
-  }
-  .navbar-nav.active {
-    display: flex; /* Display the menu when active */
-  }
-  .hamburger {
-    display: block;
-  }
-  /* Ensure video container is correctly positioned on mobile */
-  .video-container {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    height: 0;
-    margin-top: 20px;
-    overflow: hidden;
+    height: 50vh; /* Reduced height for better proportion */
+    background: url('../assets/Hero.jpg') no-repeat center center/cover;
   }
-  .video-container iframe {
+  
+  .hero-overlay {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
   }
+  
+  .hero-title {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .navbar {
+    background-color: #c4a072;
+    padding: 10px 0;
+  }
+  
+  .hamburger {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: #000;
+    cursor: pointer;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+  }
+  
+  .nav-item .nav-link {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #c4a072;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .nav-item .nav-link:hover {
+    color: black;
+  }
+  
+  /* City Card Styles */
+  .card {
+    box-shadow: var(--shadow-light);
+    border-radius: var(--border-radius-small);
+    margin-bottom: 30px;
+  }
+  
+  .card-img-top {
+    height: 250px; /* Increased height for better visibility */
+    object-fit: cover; /* Ensure images cover the entire card area */
+  }
+  
+  /* Mobile styles and hamburger menu */
+  @media only screen and (max-width: 600px) {
+    .hero {
+      height: 30vh; /* Further reduced height on mobile */
+    }
+  
+    .hero-title {
+      font-size: 1.5rem;
+    }
+  
+    .navbar-nav {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #c4a072;
+      text-align: center;
+      z-index: 1000;
+    }
+  
+    .navbar-nav.active {
+      display: flex; /* Display the menu when active */
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  
+    /* Ensure video container is correctly positioned on mobile */
+    .video-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      margin-top: 20px;
+      overflow: hidden;
+    }
+  
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  
+    .footer {
+      font-size: 0.9rem;
+      padding: 8px 0;
+      margin-top: 20px;
+    }
+  }
+  
+  /* For tablet and desktop adjustments */
+  @media only screen and (min-width: 601px) {
+    .video-container {
+      width: 80%;
+      padding-bottom: 45%; /* Smaller aspect ratio for a smaller video */
+      margin: 20px auto; /* Centered and with spacing on the top and bottom */
+    }
+  }
+  
   .footer {
-    font-size: 0.9rem;
-    padding: 8px 0;
-    margin-top: 20px;
+    background-color: #c4a072 !important;
+    color: white !important;
+    padding: 10px 0 !important;
+    text-align: center !important;
+    width: 100% !important;
   }
-}
-/* For tablet and desktop adjustments */
-@media only screen and (min-width: 601px) {
-  .video-container {
-    width: 80%;
-    padding-bottom: 45%; /* Smaller aspect ratio for a smaller video */
-    margin: 20px auto; /* Centered and with spacing on the top and bottom */
-  }
-}
-.footer {
-  background-color: #c4a072 !important;
-  color: white !important;
-  padding: 10px 0 !important;
-  text-align: center !important;
-  width: 100% !important;
-}
-
-/*# sourceMappingURL=style.css.map */
+  
