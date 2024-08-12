@@ -31,6 +31,12 @@ body {
 .hero-title {
   font-size: 2.5rem;
   margin: 0;
+<<<<<<< HEAD
+=======
+}
+.hero-subtitle {
+  font-size: 1.3rem;
+>>>>>>> 0a056d01bababca1dc5a80c7afc12a8d7850c0cf
 }
 
 .navbar {
@@ -116,6 +122,12 @@ body {
   .hero-title {
     font-size: 2rem;
   }
+<<<<<<< HEAD
+=======
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+>>>>>>> 0a056d01bababca1dc5a80c7afc12a8d7850c0cf
   .navbar-nav {
     display: none;
     position: absolute;
@@ -158,6 +170,12 @@ body {
   .hero-title {
     font-size: 2.2rem;
   }
+<<<<<<< HEAD
+=======
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+>>>>>>> 0a056d01bababca1dc5a80c7afc12a8d7850c0cf
   .navbar-nav .nav-item .nav-link {
     font-size: 15px;
     padding: 9px;
@@ -169,5 +187,40 @@ body {
     max-height: 400px;
   }
 }
+<<<<<<< HEAD
+=======
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000; /* Optional: black background while loading */
+  margin-bottom: 20px;
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.hero-title .mobile-title {
+  display: none;
+}
+.hero-title .full-title {
+  display: inline;
+}
+@media only screen and (max-width: 600px) {
+  .hero-title .mobile-title {
+    display: inline;
+  }
+  .hero-title .full-title {
+    display: none;
+  }
+}
+>>>>>>> 0a056d01bababca1dc5a80c7afc12a8d7850c0cf
 
 /*# sourceMappingURL=style.css.map */
