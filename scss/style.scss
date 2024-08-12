@@ -14,7 +14,8 @@ body {
 .hero {
   position: relative;
   width: 100%;
-  height: 50vh; /* Reduced height for better proportion */
+  height: 50vh; // Adjust the height
+  
   background: url('../assets/Hero.jpg') no-repeat center center/cover;
 
   &-overlay {
@@ -80,14 +81,14 @@ body {
 }
 
 .card-img-top {
-  height: 250px; /* Increased height for better visibility */
-  object-fit: cover; /* Ensure images cover the entire card area */
+  height: 250px; // Increased height for better visibility
+  object-fit: cover; // Ensure images cover the entire card area
 }
 
 /* Mobile styles and hamburger menu */
 @media only screen and (max-width: 600px) {
   .hero {
-    height: 30vh; /* Further reduced height on mobile */
+    height: 30vh; // Further reduced height on mobile
 
     &-title {
       font-size: 1.5rem;
@@ -106,7 +107,7 @@ body {
     z-index: 1000;
 
     &.active {
-      display: flex; /* Display the menu when active */
+      display: flex; // Display the menu when active
     }
   }
 
@@ -114,11 +115,10 @@ body {
     display: block;
   }
 
-  /* Ensure video container is correctly positioned on mobile */
   .video-container {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-bottom: 56.25%; // 16:9 aspect ratio
     height: 0;
     margin-top: 20px;
     overflow: hidden;
@@ -144,8 +144,8 @@ body {
 @media only screen and (min-width: 601px) {
   .video-container {
     width: 80%;
-    padding-bottom: 45%; /* Smaller aspect ratio for a smaller video */
-    margin: 20px auto; /* Centered and with spacing on the top and bottom */
+    padding-bottom: 45%; // Smaller aspect ratio for a smaller video
+    margin: 20px auto; // Centered and with spacing on the top and bottom
   }
 }
 
