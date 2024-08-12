@@ -39,11 +39,17 @@ body {
 }
 .navbar .hamburger {
   display: none;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: #000;
+  cursor: pointer;
 }
 .navbar .navbar-nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  list-style: none;
 }
 .navbar .navbar-nav .nav-item .nav-link {
   font-size: 16px;
@@ -69,7 +75,18 @@ body {
     font-size: 2rem;
   }
   .navbar-nav {
-    display: none; /* Hide city names on mobile */
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #c4a072;
+    text-align: center;
+    z-index: 1000;
+  }
+  .navbar-nav.active {
+    display: flex; /* Display the menu when active */
   }
   .hamburger {
     display: block; /* Show hamburger menu on mobile */
