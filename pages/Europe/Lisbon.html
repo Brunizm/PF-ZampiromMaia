@@ -6,12 +6,13 @@
     <meta name="description" content="Find the best coworking spaces and coffee shops in Lisbon. Discover unique, productive environments perfect for digital nomads and remote workers.">
     <meta name="keywords" content="Lisbon, coworking, coffee shops, digital nomads, remote work">
     <meta name="robots" content="index, follow">
-    <link rel="icon" href="../assets/favicon.ico">
+    <link rel="icon" href="../../assets/favicon.ico">
     <title>Lisbon - Global Co Work & Coffee</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Header Section -->
     <header class="hero">
         <div class="hero-overlay">
             <h1 class="hero-title">Lisbon</h1>
@@ -19,19 +20,51 @@
         </div>
     </header>
 
+    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
             <button class="hamburger" id="hamburger">
                 &#9776;
             </button>
             <ul class="navbar-nav mx-auto" id="navbarNav">
-                <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="Bangkok.html">Bangkok</a></li>
-                <li class="nav-item"><a class="nav-link" href="BuenosAires.html">Buenos Aires</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Lisbon</a></li>
-                <li class="nav-item"><a class="nav-link" href="Paris.html">Paris</a></li>
-                <li class="nav-item"><a class="nav-link" href="Prague.html">Prague</a></li>
-                <li class="nav-item"><a class="nav-link" href="Rome.html">Rome</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../index.html">Home</a></li>
+                
+                <!-- Dropdown for Americas -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAmericas" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Americas
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownAmericas">
+                        <li><a class="dropdown-item" href="../Americas/BuenosAires.html">Buenos Aires</a></li>
+                        <!-- Add more cities under Americas here -->
+                    </ul>
+                </li>
+
+                <!-- Dropdown for Asia -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAsia" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Asia
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownAsia">
+                        <li><a class="dropdown-item" href="../Asia/Bangkok.html">Bangkok</a></li>
+                        <!-- Add more cities under Asia here -->
+                    </ul>
+                </li>
+
+                <!-- Dropdown for Europe -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownEurope" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Europe
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownEurope">
+                        <li><a class="dropdown-item" href="../Europe/Lisbon.html">Lisbon</a></li>
+                        <li><a class="dropdown-item" href="../Europe/Paris.html">Paris</a></li>
+                        <li><a class="dropdown-item" href="../Europe/Prague.html">Prague</a></li>
+                        <li><a class="dropdown-item" href="../Europe/Rome.html">Rome</a></li>
+                    </ul>
+                </li>
+
+                
             </ul>
         </div>
     </nav>
@@ -54,17 +87,21 @@
         });
     </script>
 
+    <!-- Main Content -->
     <main class="container my-5">
+        <!-- Introduction Section -->
         <section class="intro text-center mb-5">
             <h1>Welcome to Lisbon</h1>
             <p>Explore the vibrant coworking spaces and coffee shops in Lisbon.</p>
         </section>
 
+        <!-- Horizontal Image Section -->
         <section class="horizontal-image text-center my-5">
             <h2>Lisbon Coffee Culture</h2>
-            <img src="../assets/Lisbon.jpg" class="img-fluid horizontal-header" alt="Lisbon Coffee Shop">
+            <img src="../../assets/Lisbon.jpg" class="img-fluid horizontal-header" alt="Lisbon Coffee Shop">
         </section>
 
+        <!-- Map Widget Section -->
         <section class="map-widget text-center my-5">
             <h2>Dear Breakfast</h2>
             <div class="row">
@@ -78,8 +115,14 @@
         </section>
     </main>
 
+    <!-- Footer Section -->
     <footer class="footer">
         <p>&copy; 2024 Global Co Work & Coffee Spaces</p>
     </footer>
+
+    <!-- Bootstrap JS (optional for dropdowns and navbar toggling) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

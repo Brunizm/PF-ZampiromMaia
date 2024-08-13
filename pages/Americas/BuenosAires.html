@@ -6,12 +6,13 @@
     <meta name="description" content="Find the best coworking spaces and coffee shops in Buenos Aires. Discover unique, productive environments perfect for digital nomads and remote workers.">
     <meta name="keywords" content="Buenos Aires, coworking, coffee shops, digital nomads, remote work">
     <meta name="robots" content="index, follow">
-    <link rel="icon" href="../assets/favicon.ico">
+    <link rel="icon" href="../../assets/favicon.ico">
     <title>Buenos Aires - Global Co Work & Coffee</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Header Section -->
     <header class="hero">
         <div class="hero-overlay">
             <h1 class="hero-title">Buenos Aires</h1>
@@ -19,19 +20,51 @@
         </div>
     </header>
 
+    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
             <button class="hamburger" id="hamburger">
                 &#9776;
             </button>
             <ul class="navbar-nav mx-auto" id="navbarNav">
-                <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="Bangkok.html">Bangkok</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Buenos Aires</a></li>
-                <li class="nav-item"><a class="nav-link" href="Lisbon.html">Lisbon</a></li>
-                <li class="nav-item"><a class="nav-link" href="Paris.html">Paris</a></li>
-                <li class="nav-item"><a class="nav-link" href="Prague.html">Prague</a></li>
-                <li class="nav-item"><a class="nav-link" href="Rome.html">Rome</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../index.html">Home</a></li>
+                
+                <!-- Dropdown for Americas -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAmericas" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Americas
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownAmericas">
+                        <li><a class="dropdown-item" href="../Americas/BuenosAires.html">Buenos Aires</a></li>
+                        <!-- Add more cities under Americas here -->
+                    </ul>
+                </li>
+
+                <!-- Dropdown for Asia -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAsia" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Asia
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownAsia">
+                        <li><a class="dropdown-item" href="../Asia/Bangkok.html">Bangkok</a></li>
+                        <!-- Add more cities under Asia here -->
+                    </ul>
+                </li>
+
+                <!-- Dropdown for Europe -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownEurope" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Europe
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownEurope">
+                        <li><a class="dropdown-item" href="../Europe/Lisbon.html">Lisbon</a></li>
+                        <li><a class="dropdown-item" href="../Europe/Paris.html">Paris</a></li>
+                        <li><a class="dropdown-item" href="../Europe/Prague.html">Prague</a></li>
+                        <li><a class="dropdown-item" href="../Europe/Rome.html">Rome</a></li>
+                    </ul>
+                </li>
+
+
             </ul>
         </div>
     </nav>
@@ -42,7 +75,7 @@
             var navbarNav = document.getElementById('navbarNav');
             navbarNav.classList.toggle('active');
         });
-    
+
         // Close the menu when a link is clicked
         document.querySelectorAll('.nav-link').forEach(function(link) {
             link.addEventListener('click', function() {
@@ -54,19 +87,23 @@
         });
     </script>
 
+    <!-- Main Content -->
     <main class="container my-5">
+        <!-- Introduction Section -->
         <section class="intro text-center mb-5">
             <h1>Welcome to Buenos Aires</h1>
             <p>Explore the vibrant coworking spaces and coffee shops in Buenos Aires.</p>
         </section>
 
+        <!-- Horizontal Image Section -->
         <section class="horizontal-image text-center my-5">
             <h2>Buenos Aires Coffee Culture</h2>
-            <img src="../assets/BuenosAires.jpg" class="img-fluid horizontal-header" alt="Buenos Aires Coffee Shop">
+            <img src="../../assets/BuenosAires.jpg" class="img-fluid horizontal-header" alt="Buenos Aires Coffee Shop">
         </section>
 
+        <!-- Map Widget Section -->
         <section class="map-widget text-center my-5">
-            <h2>Fauna Café y  Flora</h2>
+            <h2>Fauna Café y Flora</h2>
             <div class="row">
                 <div class="col-md-6">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.5271118295987!2d-58.42996502345068!3d-34.5908302568191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb9cd7c0472d%3A0xef9b13db207ae598!2sFAUNA%20Caf%C3%A9%20y%20Flora!5e0!3m2!1sen!2sar!4v1721872226355!5m2!1sen!2sar" width="100%" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -78,8 +115,14 @@
         </section>
     </main>
 
+    <!-- Footer Section -->
     <footer class="footer">
         <p>&copy; 2024 Global Co Work & Coffee Spaces</p>
     </footer>
+
+    <!-- Bootstrap JS (optional for dropdowns and navbar toggling) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

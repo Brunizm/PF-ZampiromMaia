@@ -1,16 +1,26 @@
-:root {
-  --primary-color: #333;
-  --shadow-light: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  --border-radius-small: 5px;
-  --footer-background-color: #c4a072;
+// Variables
+$primary-color: #333;
+$shadow-light: 0px 4px 6px rgba(0, 0, 0, 0.1);
+$border-radius-small: 5px;
+$footer-background-color: #c4a072;
+
+// Global Styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// Hero Section
 .hero {
   position: relative;
   width: 100%;
@@ -35,8 +45,9 @@ body {
   }
 }
 
+// Navigation Bar
 .navbar {
-  background-color: var(--footer-background-color);
+  background-color: $footer-background-color;
   padding: 10px 0;
 
   .hamburger {
@@ -44,7 +55,7 @@ body {
     font-size: 30px;
     background: none;
     border: none;
-    color: var(--primary-color);
+    color: $primary-color;
     cursor: pointer;
   }
 
@@ -54,31 +65,30 @@ body {
     justify-content: center;
     list-style: none;
 
-    .nav-item .nav-link {
-      font-size: 16px;
-      font-weight: bold;
-      color: #000000;
-      text-decoration: none;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      background-color: var(--footer-background-color);
-      padding: 10px;
-      border-radius: var(--border-radius-small);
+    .nav-item {
+      .nav-link {
+        font-size: 16px;
+        font-weight: bold;
+        color: #000;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        background-color: $footer-background-color;
+        padding: 10px;
+        border-radius: $border-radius-small;
 
-      &:hover {
-        color: black;
+        &:hover {
+          color: black;
+        }
       }
     }
   }
 }
 
-/* City Card Styles */
+// City Card Styles
 .card {
-  position: relative;
-  box-shadow: var(--shadow-light);
-  border-radius: var(--border-radius-small);
-  width: 100%;
-  height: 100%;
+  box-shadow: $shadow-light;
+  border-radius: $border-radius-small;
   margin-bottom: 30px;
 
   .card-img-top {
@@ -87,12 +97,12 @@ body {
   }
 }
 
-/* Video Container */
+// Video Section
 .video-container {
   position: relative;
-  width: 50%; // Adjusted width
-  padding-bottom: 20.75%; // Maintain 16:9 aspect ratio, smaller height
-  margin: 20px auto; // Center the video container
+  width: 50%;
+  padding-bottom: 28.25%; // Maintain aspect ratio
+  margin: 20px auto;
   overflow: hidden;
 
   iframe {
@@ -105,17 +115,17 @@ body {
   }
 }
 
-/* Footer */
+// Footer
 .footer {
-  background-color: var(--footer-background-color);
+  background-color: $footer-background-color;
   color: white;
   padding: 10px 0;
   text-align: center;
   width: 100%;
-  margin-top: 10px; // Adjusted to reduce space above footer
+  margin-top: 10px;
 }
 
-/* Mobile styles and hamburger menu */
+// Mobile Styles
 @media only screen and (max-width: 600px) {
   .hero {
     height: 30vh; // Adjust the height on mobile
@@ -132,7 +142,7 @@ body {
     top: 60px;
     left: 0;
     width: 100%;
-    background-color: var(--footer-background-color);
+    background-color: $footer-background-color;
     text-align: center;
     z-index: 1000;
 
@@ -147,13 +157,12 @@ body {
 
   .card {
     width: 100%; // Full width on mobile
-    max-width: 100%; // Ensure it doesn't shrink further
     margin-bottom: 20px;
   }
 
   .video-container {
     width: 100%;
     padding-bottom: 56.25%; // Maintain aspect ratio
-    margin-top: 20px; // Original margin
+    margin-top: 20px;
   }
 }

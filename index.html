@@ -27,12 +27,43 @@
             </button>
             <ul class="navbar-nav mx-auto" id="navbarNav">
                 <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="./pages/Bangkok.html">Bangkok</a></li>
-                <li class="nav-item"><a class="nav-link" href="./pages/BuenosAires.html">Buenos Aires</a></li>
-                <li class="nav-item"><a class="nav-link" href="./pages/Lisbon.html">Lisbon</a></li>
-                <li class="nav-item"><a class="nav-link" href="./pages/Paris.html">Paris</a></li>
-                <li class="nav-item"><a class="nav-link" href="./pages/Prague.html">Prague</a></li>
-                <li class="nav-item"><a class="nav-link" href="./pages/Rome.html">Rome</a></li>
+                
+                <!-- Dropdown for Americas -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAmericas" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Americas
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownAmericas">
+                        <li><a class="dropdown-item" href="./pages/Americas/BuenosAires.html">Buenos Aires</a></li>
+                        <!-- Add more cities under Americas here -->
+                    </ul>
+                </li>
+
+                <!-- Dropdown for Asia -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAsia" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Asia
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownAsia">
+                        <li><a class="dropdown-item" href="./pages/Asia/Bangkok.html">Bangkok</a></li>
+                        <!-- Add more cities under Asia here -->
+                    </ul>
+                </li>
+                
+                <!-- Dropdown for Europe -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownEurope" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Europe
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownEurope">
+                        <li><a class="dropdown-item" href="./pages/Europe/Lisbon.html">Lisbon</a></li>
+                        <li><a class="dropdown-item" href="./pages/Europe/Paris.html">Paris</a></li>
+                        <li><a class="dropdown-item" href="./pages/Europe/Prague.html">Prague</a></li>
+                        <li><a class="dropdown-item" href="./pages/Europe/Rome.html">Rome</a></li>
+                        <!-- Add more cities under Europe here -->
+                    </ul>
+                </li>
+            
             </ul>
         </div>
     </nav>
@@ -124,5 +155,10 @@
     <footer class="footer">
         <p>&copy; 2024 Global Co Work & Coffee Spaces - info@workworldcoffee.com</p>
     </footer>
+
+    <!-- Bootstrap JS (optional for dropdowns and navbar toggling) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
