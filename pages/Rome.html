@@ -42,6 +42,16 @@
             var navbarNav = document.getElementById('navbarNav');
             navbarNav.classList.toggle('active');
         });
+    
+        // Close the menu when a link is clicked
+        document.querySelectorAll('.nav-link').forEach(function(link) {
+            link.addEventListener('click', function() {
+                var navbarNav = document.getElementById('navbarNav');
+                if (navbarNav.classList.contains('active')) {
+                    navbarNav.classList.remove('active');
+                }
+            });
+        });
     </script>
 
     <main class="container my-5">
