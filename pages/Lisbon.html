@@ -8,9 +8,8 @@
     <meta name="robots" content="index, follow">
     <link rel="icon" href="../assets/favicon.ico">
     <title>Lisbon - Global Co Work & Coffee</title>
-    <link rel="stylesheet" href="../styles.css">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <header class="hero">
@@ -22,7 +21,10 @@
 
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <ul class="navbar-nav mx-auto"> id="navbarNav"> 
+            <button class="hamburger" id="hamburger">
+                &#9776;
+            </button>
+            <ul class="navbar-nav mx-auto" id="navbarNav">
                 <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="Bangkok.html">Bangkok</a></li>
                 <li class="nav-item"><a class="nav-link" href="BuenosAires.html">Buenos Aires</a></li>
@@ -33,6 +35,14 @@
             </ul>
         </div>
     </nav>
+
+    <!-- Script for Hamburger Menu -->
+    <script>
+        document.getElementById('hamburger').addEventListener('click', function() {
+            var navbarNav = document.getElementById('navbarNav');
+            navbarNav.classList.toggle('active');
+        });
+    </script>
 
     <main class="container my-5">
         <section class="intro text-center mb-5">
@@ -46,20 +56,17 @@
         </section>
 
         <section class="map-widget text-center my-5">
-            <h2>Favorite Coffee Shop in Lisbon.</h2>
+            <h2>Dear Breakfast</h2>
             <div class="row">
                 <div class="col-md-6">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.5451839042837!2d100.52412341533284!3d13.736717501110847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e298c1a5f4e1f3%3A0x6c4e2d1fdbc2bb02!2sGallery%20Drip%20Coffee!5e0!3m2!1sen!2sth!4v1617373433238!5m2!1sen!2sth" width="100%" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3111.403379021327!2d-9.139336684866935!3d38.710191979599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19331a73e4eb43%3A0x189d27cb8473ebc2!2sDear%20Breakfast%20-%20Chiado!5e0!3m2!1sen!2spt!4v1623423504095!5m2!1sen!2spt" width="100%" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="col-md-6">
-                 
+                    <!-- Additional content here -->
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <p>&copy; 2024 Global Co Work & Coffee Spaces</p>
-    </footer>
-</body>
-</html>
+        <p>&copy; 2024 Global Co Work
